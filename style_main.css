@@ -1,0 +1,460 @@
+*{
+    margin:0;    
+}
+body{
+    background-color: #4D1F1F;
+
+}
+
+.nav-container{
+    background-color: #573f3f;
+    margin-left: 7px;
+    margin-top: 5px;
+    margin-right: 7px;
+    display: flex;
+}
+.navbar{
+    display: none;
+}
+
+#logo{
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.paragraph{
+    text-align: center;
+    margin-top: 2px;
+    font-family: "Pacifico", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1rem;
+    color:black;
+}
+.top-section{
+    text-align: center;
+    margin-top: 10px;
+    font-family: "Pacifico", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.heading{
+    font-size: 1.5rem;
+    color:#aeae0a;
+    text-align: center;
+}
+.nav-section{
+    display: flex;
+    margin-left: 500px;
+}
+
+.link-section{
+    margin-left: 450px;
+    color:white; 
+}
+
+.about:hover{
+    color:#aeae0a;
+}
+
+.contact:hover{
+    color:#aeae0a;
+}
+
+/*--------------------Search Bar-----------------------------*/
+
+.search {
+    width: 500px;
+    height: 40px;
+    margin: 20px auto;
+    background: #444;
+    background: rgba(0,0,0,.2);
+    border-radius:  3px;
+    border: 1px solid #fff;
+    
+    input {
+      width: 370px;
+      padding: 10px 5px;
+      float: left;
+      color: #ccc;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      border: 0;
+      background: transparent;
+      border-radius: 3px 0 0 3px;
+      &:focus {
+        outline: 0;
+        background:transparent;
+      }
+    }
+    
+    button {
+      position: relative;
+      float: right;
+      border: 0;
+      padding: 0;
+      cursor: pointer;
+      height: 40px;
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      width: 120px;
+      color: #fff;
+      background: transparent;
+      border-left: 1px solid #fff;
+      border-radius: 0 3px 3px 0;
+      &:hover {
+        background: #fff;
+        color:#444;
+      }
+      &:active {
+        box-shadow: 0px 0px 12px 0px rgba(225, 225, 225, 1);
+      }
+      &:focus {
+        outline: 0;
+      }
+    }  
+  }
+
+  /*-----------------------------------------------------------*/
+
+  .random-meal {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 250px;
+}
+
+#mealImage {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}   
+
+#mealName {
+    margin-top: 10px;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*--------------------Searched items section------------------------------------*/
+
+.category-label {
+    display: inline-block;
+    margin-left: 10px;
+    color: #caca09; 
+}
+
+.searched_title{
+    display: flex;
+
+}
+.recently-searched {
+    padding: 10px;
+    background-color: #747070;
+    margin-top: 1px;
+}
+#categoryLabel{
+    margin-left: 20%;
+    font-size: 2rem;
+    color:rgb(103, 21, 21); 
+    font-family: "Sigmar One", sans-serif;
+    font-weight: 5px;
+}
+
+.recently-searched h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    font-family: "Pacifico", cursive;   
+    margin-top: 1px;
+    color:#caca09;
+}
+
+#recentlySearchedContainer {
+    display: flex;
+    overflow-x: auto;
+    font-family: "Pacifico", cursive;
+    justify-content: space-evenly;
+}
+
+#recentlySearchedContainer img {
+    width: 200px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 5px;
+   
+
+}
+
+a {
+    color: inherit; 
+    text-decoration: none; 
+}
+
+/*-----------------Modal-------------------*/
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.modal-content {
+    background-color: #aaa1a1ec;
+    max-width: 700px;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.ingredients_heading{
+    color:#aeae0a;
+    font-family: "Pacifico", cursive;
+    text-align: center;
+    border-radius: 15px;
+    background-color: #6b3232;
+    padding: 10px;
+    font-size: 2rem;
+    margin-top: 10px;
+    
+}
+
+.instruction_heading{
+    color:#aeae0a;
+    font-family: "Pacifico", cursive;
+    background-color: #6b3232;
+    border-radius: 15px;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+
+}
+#ingredientList{
+    color:#3c0808;
+    font-family: "Pacifico", cursive;
+
+}
+
+#instructions{
+    color:#3c0808;
+    font-family: "Pacifico", cursive;
+
+
+}
+
+/* Close button styles */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.close:before, .close:after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 24px;
+    background-color: #333333;
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
+
+/* Overlay animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Media query for screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+    .nav-container {
+        align-items: center;
+        display: block;
+    }
+
+    #logo {
+        margin-left: 250px;
+        height:100px;
+        width:auto;
+    }
+
+    .top-section {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        padding: 10px;
+
+    }
+
+    .nav-section {
+        margin-left: 0;
+        
+    }
+    .heading{
+        margin-left: 100px;
+    }
+
+    .link-section {
+        margin-left: 0;
+        margin-top: 10px;
+        display: none;
+    }
+
+    .navbar {
+        background-color: #573f3f;
+        display: flex;
+        align-items: center;
+        padding: 1px;
+        justify-items: center;
+    }
+    .nav-items {
+        display: none;
+    }
+
+    .nav-items a {
+        color: white;
+        text-decoration: none;
+        margin-right: 2px;
+        margin-left: 150px;
+        margin-top: 5px;
+        font-size: 1.2rem;
+        align-items: center;
+        font-family: "Pacifico", cursive;
+    }
+
+    .hover_contact:hover{
+        color:#cfcd68;
+    }
+
+    .hover_about:hover{
+        color:#cfcd68;
+    }
+    
+    .burger-menu {
+        cursor: pointer;
+    }
+    
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px 0;
+    }
+
+    .search {
+        width: 60%;
+        margin: 10px auto;
+    }
+
+    .search input {
+        width: 70%;
+    }
+
+    .search button {
+        width: 25%;
+    }
+
+    .random-meal {
+        max-width: 50%;
+        margin: 20px auto;
+    }
+
+    #mealImage {
+        width: 100%;
+        height: auto;
+    }
+
+    .searched_title{
+        display: block;
+    
+    }
+    #categoryLabel{
+        margin-left: 10px;
+    }
+
+    .recently-searched {
+        padding: 10px;
+        margin-top: 10px;
+        margin: 10%;
+        border-radius: 20px;
+        background-color: #9a7f7f9b;
+    }
+    .recently-searched h2{
+        text-align: center;
+    }
+
+    #recentlySearchedContainer {
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        margin-top: 0px;
+    }
+
+    #recentlySearchedContainer img {
+        width: 60%;
+        margin-bottom: 10px;
+        margin-left: 8%;
+    }
+}

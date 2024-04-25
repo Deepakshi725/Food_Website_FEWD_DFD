@@ -1,0 +1,260 @@
+/*---------------------CONTACT SECTION----------------------*/
+
+*{
+    margin:0;    
+}
+body{
+    background-color: #4D1F1F;
+}
+.paragraph{
+    text-align: center;
+    margin-top:20px;
+    font-size: 2rem;
+    font-family: "Pacifico", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    padding-top: 20px;
+    padding:40px;
+    color:rgb(20, 2, 2);
+   
+}
+.contact_para{
+    background-image: url("assets/chef_pic.jpg");
+    margin-top: 10px;
+    padding-top: 5px;
+    padding-left:100px;
+    padding-right: 100px;
+    margin-left: 200px;
+    margin-right: 100px;
+    border-radius: 10px;
+    width:1000px;
+}
+
+
+.contact_heading{
+    font-size:2rem;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 50px;
+    color: white;
+    font-family: "Pacifico", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    word-spacing: 30px; 
+}
+
+.nav-items{
+    display: none;
+}
+#logo{
+    border-radius: 100%;
+    width:100px;
+    height:100px;
+    margin-right: 100px;
+}
+
+.contact_top{
+    margin-right: 500px;
+}
+.about_top:hover{
+    color:#cfcd68;
+}
+.button_click {
+    background: #7a2121;
+    color: white;
+    font-family: inherit;
+    padding: 0.45em;
+    padding-left: 1em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #9f6d6d;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3em;
+    margin-left: 10px;
+    margin-right: 250px;
+  }
+  
+  .iconButton {
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #6872a8;
+    right: 0.3em;
+    transition: all 0.3s;
+  }
+  
+  .button_click:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em #cfcd68;
+  }
+  
+  .button_click:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em #dde0a9;
+  }
+  #mail{
+    height:50px;
+    width:50px;
+    vertical-align: middle;
+  }
+
+  #whatsapp{
+    height:40px;
+    width:40px;
+    vertical-align: middle;
+  }
+
+  a {
+    color: inherit; 
+    text-decoration: none; 
+}
+
+@media only screen and (max-width: 600px) {
+    /* CSS rules for screens up to 600px wide */
+    .about_heading {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    #logo {
+        margin-right: 0;
+        margin-bottom: 20px; 
+        margin-left: 40%;
+    }
+
+    .about_top {
+        display: none;
+    }
+
+    .contact_para{
+        font-size: 1.3rem;
+        padding:5px;
+        margin-left: 30px;
+        width:90%;
+    }
+    .paragraph{
+        color:rgb(20, 2, 2);
+
+    }
+    .about{
+        padding:5px;
+        width:90%;
+        margin-left: 20px;
+    }
+
+    .navbar {
+        background-color: #573f3f;
+        display: flex;
+        align-items: center;
+        padding: 1px;
+        justify-items: center;
+    }
+    
+    .nav-items {
+        display: none;
+    }
+    
+    .nav-items a {
+        color: white;
+        text-decoration: none;
+        margin-right: 2px;
+        margin-left: 60px;
+        margin-top: 5px;
+        font-size: 1.2rem;
+        align-items: center;
+        font-family: "Pacifico", cursive;
+    }
+
+    .active {
+        color: #aeae0a; /* Change color or add any other visual effect for the active item */
+    }
+    .hover_contact:hover{
+        color:#cfcd68;
+    }
+    
+    .burger-menu {
+        cursor: pointer;
+    }
+    
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: white;
+        margin: 5px 0;
+    }
+    .button_click{
+        display: none;
+    }
+    .contact_top{
+        display: none;
+    }
+    .button_click_responsive {
+        background: #7a2121;
+        color: white;
+        font-family: inherit;
+        padding: 0.45em;
+        padding-left: 1em;
+        font-size: 12px;
+        font-weight: 500;
+        border-radius: 0.9em;
+        border: none;
+        cursor: pointer;
+        letter-spacing: 0.05em;
+        display: flex;
+        align-items: center;
+        box-shadow: inset 0 0 1.6em -0.6em #9f6d6d;
+        overflow: hidden;
+        position: relative;
+        height: 2.8em;
+        padding-right: 3em;
+        margin-left: 110px;
+        margin-right: 250px;
+        width: 150px;
+        margin-top: 2px;
+      }
+      
+      .iconButtonResponsive {
+        margin-left: 1em;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 2.2em;
+        width: 2.2em;
+        border-radius: 0.7em;
+        box-shadow: 0.1em 0.1em 0.6em 0.2em #6872a8;
+        right: 0.3em;
+        transition: all 0.3s;
+      }
+      
+      .button_click_responsive:hover {
+        transform: translate(-0.05em, -0.05em);
+        box-shadow: 0.15em 0.15em #cfcd68;
+      }
+      
+      .button_click_responsive:active {
+        transform: translate(0.05em, 0.05em);
+        box-shadow: 0.05em 0.05em #dde0a9;
+      }
+      
+    
+}

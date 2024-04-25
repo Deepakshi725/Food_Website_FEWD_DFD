@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+    <link href="style_main.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="burger-menu" onclick="toggleNav()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div class="nav-items">
+            <a href="about.html"><span class="hover_about">About</span></a>
+            <a href="contact.html"><span class="hover_contact">Contact</span></a></div></div>
+    <div class="nav-container">
+        <img id="logo" src="assets/logo_cropped.jpg">
+      <div class="top-section"> 
+        <div class="nav-section"> 
+<h1 class="heading">WELCOME TO CUISINE QUEST</h1>
+    <div class="link-section"><h4 class="about "><a href="about.html">About</a></h4>
+    <h4 class="contact"><a href="contact.html">Contact</a></h4></div></div>
+<p class="paragraph">Cuisine Quest is your passport to culinary exploration. Embark on a journey through a treasure trove of recipes from 
+    around the globe, curated to ignite your taste buds and inspire 
+    your inner chef. Whether you're seeking traditional comfort food or exotic flavors, our platform guides you on a flavorful
+     adventure. Start your quest today and elevate your cooking experience to new heights!</p>
+
+     <form class="search" action="">
+        <input type="search" placeholder="Search categories here..." required>
+        <button type="submit">Search</button>
+      </form> 
+      </div>
+    </div>
+
+      <div id="randomMeal" class="random-meal">
+        <h2>Random Meal</h2>
+        <div id="mealContainer">
+            <img id="mealImage" src="" alt="Meal Image">
+            <p id="mealName"></p>
+        </div>
+    </div>
+
+      <!-- Modal HTML -->
+      <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="ingredients_heading">Ingredients</h2>
+            <ul id="ingredientList"></ul>
+            <h2 class="instruction_heading">Instructions</h2>
+            <p id="instructions"></p>
+        </div>
+    </div>
+
+       <!-- Recently Searched Foods Section -->
+       <div id="recentlySearched" class="recently-searched">
+        <div class="searched_title">
+        <h2>SEARCHED MEALS BY CATEGORIES</h2>
+        <h4 id="categoryLabel"></h4></div>
+        <div id="recentlySearchedContainer">
+            <!-- Searched foods will be dynamically added here -->
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="toggle.js"></script>
+</body>
+</html>

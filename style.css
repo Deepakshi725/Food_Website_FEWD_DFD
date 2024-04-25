@@ -1,0 +1,177 @@
+
+*{
+    margin:0;    
+}
+body{
+    background-image: linear-gradient( #4D1F1F, #4E4848);
+    background-color: #4D1F1F;
+}
+
+.logo_pic{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    margin-left: 240px;
+    margin-top: 20px;
+}
+
+.heading_cuisine{
+    padding-top: 20px;
+    margin-top: 40px;
+    padding-bottom: 40px;
+    color:#c7c74c;
+}
+.image_section{
+    display: flex;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 60px;
+    font-family: "Pacifico", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    
+}
+.paragraph{
+    color:#56a8cb;
+}
+.wallpaper_img{
+    width:800px;
+    height:800px;
+    background-image: url("assets/wallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-left: 80px;
+    
+}
+.flex-container{
+    display: flex;
+}
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+    font-family: "Pacifico", sans-serif;
+    color:white;
+    font-style: normal;
+    font-weight: 0px;
+    
+}
+
+.button_click {
+    background: #7a2121;
+    color: white;
+    font-family: inherit;
+    padding: 0.45em;
+    padding-left: 1em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 0.9em;
+    border: none;
+    cursor: pointer;
+    letter-spacing: 0.05em;
+    display: flex;
+    align-items: center;
+    box-shadow: inset 0 0 1.6em -0.6em #9f6d6d;
+    overflow: hidden;
+    position: relative;
+    height: 2.8em;
+    padding-right: 3em;
+    margin-left: 200px;
+  }
+  
+  .iconButton {
+    margin-left: 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 0.7em;
+    box-shadow: 0.1em 0.1em 0.6em 0.2em #6872a8;
+    right: 0.3em;
+    transition: all 0.3s;
+  }
+  
+  .button_click:hover {
+    transform: translate(-0.05em, -0.05em);
+    box-shadow: 0.15em 0.15em #cfcd68;
+  }
+  
+  .button_click:active {
+    transform: translate(0.05em, 0.05em);
+    box-shadow: 0.05em 0.05em #dde0a9;
+  }
+
+  .about_top:hover{
+    color:#cfcd68;
+  }
+
+  .contact_top:hover{
+    color:#cfcd68;
+  }
+
+  a {
+    color: inherit; /* Set the color to inherit from the parent */
+    text-decoration: none; /* Optionally remove underline */
+}
+  
+@media only screen and (max-width: 600px) {
+    .wallpaper_img {
+        display: none;
+    }
+    .logo_pic {
+        width: 180px;
+        height: 180px;
+        margin-left: 220px;
+        margin-top: 10px;
+        
+    }
+
+    .heading_cuisine {
+        margin-top: 20px;
+        padding: 10px;
+        font-size: 4.5rem;
+    }
+
+    .logo {
+        margin-left: 20px;
+        font-size: 2em;
+    }
+
+    .paragraph {
+        margin-top: 30px;
+        font-size: 1.5rem;
+        margin-bottom: 50px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .bottom {
+        margin-top: 100px;
+        font-size: 2rem;
+    }
+
+    .button_click {
+        margin-left: 20px;
+        font-size: 14px;
+        margin-right: 30px;
+    }
+
+    .iconButton {
+        margin-left: 0.5em;
+        height: 1.8em;
+        width: 1.8em;
+    }
+}
+  
+
